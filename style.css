@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --ff: "Montserrat", serif;
+
+    --clr-background: #d3d3d3;
+    --clr-background-card: #e9e9e9;
+    --clr-shadow: #797979;
+
+    --clr-font-light: #d4d4d4;
+    --clr-font-medium: #8b8b8b;
+    --clr-font-dark: #3d3d3d;
+    --clr-font-dark2: #1a1a1a;
+
+    --clr-primary: #ee7646;
+}
+
+body{
+    font-family: var(--ff);
+    background-color: var(--clr-background);
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    color: var(--clr-font-dark);
+}
+h1 > span{
+    color: var(--clr-font-dark2);
+}
+
+.projects-container{
+    margin-top: 50px;
+    display: flex;
+}
+
+.projects{
+    height: 300px;
+    width: 300px;
+    background-color: var(--clr-background-card);
+    box-shadow: 5px 10px 10px var(--clr-shadow);
+    border-radius: 20px;
+    margin: 0 20px 0 20px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.projects:hover{
+    transform: perspective(300px) rotate3d(0, 1, 0, 2deg) scale(1.05); 
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+/*LINKS FOR PROJ*/
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+a:link{
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--clr-font-medium);
+}
+
+a:hover{
+    color: var(--clr-primary);
+}
+/*---------------------*/
+/*----------SCREEN SIZE-----------*/
+@media (max-width: 600px){
+    body{
+        background-color: #1a1a1a;
+    }
+
+    h1{
+       padding: 20px; 
+    }
+
+    .projects-container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+h1 > span{
+    color: var(--clr-font-dark);
+}
+
+/*PROJECT 1*/
+
+.proj-1 > img{
+    width: 150px;
+}
+
+.proj-1 > h2 > span{
+    color: var(--clr-font-medium);
+}
+
+/*PROJECT 2...*/
+
+.proj-2 > img{
+    width: 150px;
+}
