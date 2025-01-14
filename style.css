@@ -28,11 +28,20 @@ body{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    
 }
+.projects-container{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
+}
+
 h1{
     font-size: 40px;
     color: var(--clr-font-dark);
+    margin: 20px 0 60px 0;
 }
 
 h1 > span{
@@ -44,10 +53,10 @@ h2 > span{
     color: var(--clr-font-medium);
 }
 
-.projects-container{
+/* .projects-container{
     margin-top: 50px;
     display: flex;
-}
+} */
 
 .projects{
     height: 300px;
@@ -100,23 +109,13 @@ a:hover{
 }
 /*---------------------*/
 
-/*PROJECT 1*/
-.proj-1 > img{
-    width: 150px;
+.proj-imgs{
+    width: 50%;
 }
 
-/*PROJECT 2...*/
-.proj-2 > img{
-    width: 150px;
-}
-
-/*PROJECT 3...*/
-.proj-3 > img{
-    width: 100px;
-}
 
 /*----------SCREEN SIZE-----------*/
-@media (max-width: 600px){
+@media (max-width: 1100px){
     body{
         background-color: #1a1a1a;
     }
