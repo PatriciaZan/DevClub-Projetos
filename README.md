@@ -1,6 +1,6 @@
 # Projects from DevClub Course
 
-This repository contains three small Css/Html projects made during the front-end course on DevClub.
+This repository contains seven small Css/Html projects made during the front-end course on DevClub.
 Check the Projects [HERE](https://patriciazan.github.io/DevClub-Projetos/)
 
 Main Page
