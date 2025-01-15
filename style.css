@@ -113,6 +113,18 @@ a:hover{
     width: 50%;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer > p{
+    font-size: 20px;
+}
+
+
 
 /*----------SCREEN SIZE-----------*/
 @media (max-width: 1100px){
@@ -140,5 +152,11 @@ a:hover{
 
     .projects:active{
         opacity: 80%;
+    }
+
+    footer > p{
+        padding: 5px;
+        color: var(--clr-font-light);
+        font-size: 15px;
     }
 }

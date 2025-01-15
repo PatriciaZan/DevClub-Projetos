@@ -4,7 +4,7 @@ This repository contains seven small Css/Html projects made during the front-end
 Check the Projects [HERE](https://patriciazan.github.io/DevClub-Projetos/)
 
 Main Page
-![Main](./prints/main.png)
+![Main](./prints/mainPage.png)
 ![MainSmall](./prints/main-small.png)
 
 First project  - We care about your pet.
